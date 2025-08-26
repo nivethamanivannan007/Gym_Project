@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Powerlifting-/static/css/main.fcec86fc.css",
+    "main.js": "/Powerlifting-/static/js/main.55b313e6.js",
+    "index.html": "/Powerlifting-/index.html",
+    "main.fcec86fc.css.map": "/Powerlifting-/static/css/main.fcec86fc.css.map",
+    "main.55b313e6.js.map": "/Powerlifting-/static/js/main.55b313e6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fcec86fc.css",
+    "static/js/main.55b313e6.js"
+  ]
+}

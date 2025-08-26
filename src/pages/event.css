@@ -1,0 +1,117 @@
+/* Page container */
+.event-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  min-height: 100vh;
+  color: #000;
+  box-sizing: border-box;
+}
+
+/* Titles */
+.page-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1e40af;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.page-subtitle {
+  color: #555;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+/* Layout */
+.event-layout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+/* Card style */
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+  box-sizing: border-box;
+}
+
+/* Form inputs */
+.event-form input,
+.event-form select {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;     /* uniform spacing */
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+/* Card title */
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1d4ed8;
+  margin-bottom: 6px;
+}
+
+.card-subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 12px;
+}
+
+/* Buttons */
+.button-group {
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 8px;                /* even spacing */
+}
+
+.btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.btn.add { background: linear-gradient(to right, #2563eb, #3b82f6); color: #fff; }
+.btn.clear { background: #9ca3af; color: #fff; }
+.btn.edit { background: #2563eb; color: #fff; }
+.btn.delete { background: #dc2626; color: #fff; }
+
+/* Events list */
+.event-list .event-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.event-card {
+  background: #f9fafb;
+  border-radius: 10px;
+  padding: 14px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.08);
+  box-sizing: border-box;
+}
+
+.event-card h4 {
+  margin-bottom: 6px;
+  font-size: 16px;
+  color: #1e3a8a;
+}
+
+.event-card p {
+  margin: 4px 0;
+  font-size: 14px;
+}

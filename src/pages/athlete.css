@@ -1,0 +1,140 @@
+/* Page container */
+.athlete-container {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #111827;
+}
+
+/* Page title */
+.athlete-container h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #2563eb;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* Subtitle */
+.athlete-container p {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+/* Form card */
+.athlete-form {
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+/* Labels + inputs */
+.athlete-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.athlete-form input,
+.athlete-form select {
+  margin-top: 6px;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #f9fafb;
+  color: #111827;
+}
+
+/* Read-only weight category */
+.athlete-form input[readonly] {
+  background: #f3f4f6;
+  font-style: italic;
+}
+
+/* File upload */
+.athlete-form input[type="file"] {
+  padding: 6px;
+  border: 1px dashed #9ca3af;
+  background: #fdfdfd;
+  cursor: pointer;
+}
+
+/* ✅ Submit button (left aligned style) */
+.athlete-form button[type="submit"] {
+  grid-column: span 2;
+  justify-self:right;           /* left side */
+  padding: 12px 24px;
+  border: none;
+  border-radius: 50px;           /* rounded pill style */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(135deg, #10b981, #059669); /* green gradient */
+  color: #fff;
+  box-shadow: 0px 4px 10px rgba(16, 185, 129, 0.4);
+  transition: all 0.3s ease;
+}
+
+.athlete-form button[type="submit"]:hover {
+  background: linear-gradient(135deg, #059669, #047857);
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 14px rgba(16, 185, 129, 0.5);
+}
+
+/* Athlete table */
+.athlete-table {
+  margin-top: 30px;
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.athlete-table th,
+.athlete-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 14px;
+}
+
+.athlete-table th {
+  background: #f3f4f6;
+  text-align: left;
+  font-weight: 600;
+  color: #374151;
+}
+
+.athlete-table td {
+  color: #111827;
+}
+
+/* Action buttons */
+.athlete-table button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.athlete-table button:first-child {
+  background: #2563eb; /* Edit */
+  margin-right: 6px;
+}
+
+.athlete-table button:last-child {
+  background: #dc2626; /* Delete */
+}
